@@ -1,0 +1,101 @@
+div.twoCol-per,
+div.twoCol-leftSelf,
+div.twoCol-rightSelf,
+div.threeCol-middleSelf,
+div.threeCol-rightSelf {
+    position: relative;
+    height: 100px;
+}
+
+div > div {
+    position: absolute;
+    bottom: 0;
+}
+
+div.twoCol-per > div:first-child {
+    width: 30%;
+    left: 0;
+    background-color: seagreen;
+}
+
+div.twoCol-per > div:last-child {
+    width: 70%;
+    right: 0;
+    background-color: cadetblue;
+}
+
+/* 严丝合缝，但是需要支持css3 */
+div.twoCol-rightSelf > div:first-child {
+    width: 150px;
+    left: 0;
+    background-color: seagreen;
+}
+
+div.twoCol-rightSelf > div:last-child {
+    width: calc(100% - 150px);
+    right: 0;
+    margin-left: 150px;
+    background-color: cadetblue;
+}
+
+/* 勉强可以看，但是有错位 */
+/*div.twoCol-rightSelf > div:nth-child(2) {*/
+    /*width: 150px;*/
+    /*left: 0;*/
+    /*background-color: seagreen;*/
+/*}*/
+
+/*div.twoCol-rightSelf > div:last-child {*/
+    /*position: static;*/
+    /*right: 0;*/
+    /*margin-left: 150px;*/
+    /*background-color: cadetblue;*/
+/*}*/
+
+div.twoCol-leftSelf > div:first-child {
+    left: 0;
+    width: calc(100% - 150px);
+    background-color: seagreen;
+}
+
+div.twoCol-leftSelf > div:last-child {
+    right: 0;
+    width: 150px;
+    background-color: cadetblue;
+}
+
+div.threeCol-middleSelf > div:first-child {
+    left: 0;
+    width: 150px;
+    background-color: seagreen;
+}
+
+div.threeCol-middleSelf > div:nth-child(2) {
+    left: 150px;
+    right: 150px;
+    background-color: dimgrey;
+}
+
+div.threeCol-middleSelf > div:last-child {
+    right: 0;
+    width: 150px;
+    background-color: cadetblue;
+}
+
+div.threeCol-rightSelf > div:first-child {
+    left: 0;
+    width: 150px;
+    background-color: seagreen;
+}
+
+div.threeCol-rightSelf > div:nth-child(2) {
+    left: 150px;
+    width: 150px;
+    background-color: dimgrey;
+}
+
+div.threeCol-rightSelf > div:last-child {
+    left: 300px;
+    width: calc(100% - 300px);
+    background-color: cadetblue;
+}

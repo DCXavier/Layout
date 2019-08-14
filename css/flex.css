@@ -1,0 +1,67 @@
+div.twoCol-per,
+div.twoCol-rightSelf,
+div.twoCol-leftSelf,
+div.threeCol-middleSelf,
+div.threeCol-rightSelf {
+    display: flex;
+}
+
+div.twoCol-per > div:first-child {
+    flex: 3;
+    background-color: seagreen;
+}
+
+div.twoCol-per > div:last-child {
+    flex: 7;
+    background-color: cadetblue;
+}
+
+div.twoCol-rightSelf > div:first-child {
+    width: 150px;
+    background-color: seagreen;
+}
+
+div.twoCol-rightSelf > div:last-child {
+    flex: 1;
+    background-color: cadetblue;
+}
+
+div.twoCol-leftSelf > div:first-child {
+    flex: 1;
+    background-color: seagreen;
+}
+
+div.twoCol-leftSelf > div:last-child {
+    width: 150px;
+    background-color: cadetblue;
+}
+
+div.threeCol-middleSelf > div:first-child {
+    width: 150px;
+    background-color: seagreen;
+}
+
+div.threeCol-middleSelf > div:nth-child(2) {
+    flex: 1;
+    background-color: dimgrey;
+}
+
+div.threeCol-middleSelf > div:last-child {
+    width: 150px;
+    background-color: cadetblue;
+}
+
+div.threeCol-rightSelf > div:first-child {
+    width: 150px;
+    background-color: seagreen;
+}
+
+div.threeCol-rightSelf > div:nth-child(2) {
+    width: 150px;
+    background-color: dimgrey;
+}
+
+div.threeCol-rightSelf > div:last-child {
+    flex: 1;
+    background-color: cadetblue;
+}

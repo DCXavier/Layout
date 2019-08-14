@@ -1,0 +1,116 @@
+div.twoCol-per > div:first-child {
+    float: left;
+    width: 30%;
+    background-color: seagreen;
+}
+
+div.twoCol-per > div:last-child {
+    float: right;
+    width: 70%;
+    background-color: cadetblue;
+}
+
+/* same style of writing */
+/*div.twoCol-per > div {*/
+/*display: inline-block;*/
+/*float: left;*/
+/*}*/
+
+/*div.twoCol-per > div:nth-child(2) {*/
+/*width: 30%;*/
+/*background-color: seagreen;*/
+/*}*/
+
+/*div.twoCol-per > div:last-child {*/
+/*width: 70%;*/
+/*background-color: cadetblue;*/
+/*}*/
+
+
+div.twoCol-rightSelf > div:first-child {
+    float: left;
+    width: 150px;
+    background-color: seagreen;
+}
+
+div.twoCol-rightSelf > div:last-child {
+    background-color: cadetblue;
+}
+/* 需要兼容css3 */
+div.twoCol-leftSelf > div:first-child {
+    display: inline-block;
+    width: calc(100% - 150px);
+    background-color: seagreen;
+}
+
+div.twoCol-leftSelf > div:last-child {
+    float: right;
+    width: 150px;
+    background-color: cadetblue;
+}
+/*
+   可以使用，但想要使用要不然就调换HTML中两个块的位置，
+   要不然就在css中用第一个去挤第二个
+*/
+/*div.twoCol-leftSelf > div:last-child {*/
+    /*background-color: seagreen;*/
+/*}*/
+
+/*div.twoCol-leftSelf > div:first-child {*/
+    /*float: right;*/
+    /*width: 150px;*/
+    /*background-color: cadetblue;*/
+/*}*/
+
+/* 需要兼容css3 */
+div.threeCol-middleSelf > div:first-child {
+    float: left;
+    width: 150px;
+    background-color: seagreen;
+}
+
+div.threeCol-middleSelf > div:nth-child(2) {
+    display: inline-block;
+    width: calc(100% - 300px);
+    background-color: dimgrey;
+}
+
+div.threeCol-middleSelf > div:last-child {
+    float: right;
+    width: 150px;
+    background-color: cadetblue;
+}
+
+/* 本方法可以使用，但是只能用第二个去挤第三个，所以布局来说第二列的内容要放在第三列*/
+/*div.threeCol-middleSelf > div:first-child {*/
+    /*float: left;*/
+    /*width: 150px;*/
+    /*background-color: seagreen;*/
+/*}*/
+
+/*div.threeCol-middleSelf > div:last-child {*/
+    /*margin: 0 150px;*/
+    /*background-color: dimgrey;*/
+/*}*/
+
+/*div.threeCol-middleSelf > div:nth-child(2) {*/
+    /*float: right;*/
+    /*width: 150px;*/
+    /*background-color: cadetblue;*/
+/*}*/
+
+div.threeCol-rightSelf > div:first-child {
+    float: left;
+    width: 150px;
+    background-color: seagreen;
+}
+
+div.threeCol-rightSelf > div:nth-child(2) {
+    float: left;
+    width: 150px;
+    background-color: dimgrey;
+}
+
+div.threeCol-rightSelf > div:last-child {
+    background-color: cadetblue;
+}

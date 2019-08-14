@@ -1,0 +1,30 @@
+body, div {
+    color: #222;
+    font-size: 22px;
+    font-family: "微软雅黑 Light", Georgia, Consolas, sans-serif;
+}
+
+div > div {
+    height: 100px;
+}
+
+div.twoCol-per,
+div.twoCol-rightSelf,
+div.twoCol-leftSelf,
+div.threeCol-middleSelf,
+div.threeCol-rightSelf {
+    width: 100%;
+    border: 1px solid gray;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+div.threeCol-rightSelf {
+    margin-bottom: 0;
+}
+
+span {
+    width: 100%;
+    display: block;
+}
