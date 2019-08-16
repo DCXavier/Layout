@@ -6,7 +6,7 @@ header {
 
 header > div.header-box {
     display: flex;
-    width: 1150px;
+    width: 960px;
     height: 100%;
     margin: 0 auto;
     color: #fff;
@@ -40,7 +40,7 @@ main > div.banner {
 
 div.banner > div.banner-main {
     position: relative;
-    width: 1150px;
+    width: 960px;
     height: 100%;
     margin: 0 auto;
 }
@@ -83,7 +83,7 @@ div.tab-btn {
 }
 
 div.tab-btn > div.tab-btn-box {
-    width: 1150px;
+    width: 960px;
     height: 50px;
     padding-top: 20px;
     margin: 0 auto;
@@ -123,9 +123,9 @@ div.main-box > div.home-page {
     position: absolute;
     display: flex;
     flex-direction: column;
-    width: 1150px;
+    width: 960px;
     height: 578px;
-    left: calc((100% - 1150px) / 2);
+    left: calc((100% - 960px) / 2);
     bottom: 0;
 }
 
